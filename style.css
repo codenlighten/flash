@@ -1,0 +1,12 @@
+body {
+	text-align: center;
+}
+
+#flash {
+	width: 50vw;
+}
+
+button,
+input {
+	margin: 2px;
+}

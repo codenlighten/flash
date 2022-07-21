@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<title>Strobe</title>
+	</head>
+	<body>
+		<img id="flash" src="./flash.webp" alt="" />
+		<h3 id="hello"></h3>
+		<div id="login">
+			<label for="">Enter Your Name!</label><br />
+			<input id="name" type="text" /><br />
+			<button onclick="submit()">submit</button>
+		</div>
+		<br />
+		<h3>Strobe Time!</h3>
+		<label for="">Flash Every # of Second</label><br />
+		<!-- <input type="text"> -->
+		<input value="1" id="number" type="number" required /><br />
+		<button onclick="strobe()">strobe</button>
+
+		<hr />
+		<button onclick="clearMe()">Clear Name</button>
+		<script src="app.js"></script>
+	</body>
+</html>
