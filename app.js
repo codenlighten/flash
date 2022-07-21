@@ -6,10 +6,13 @@ if (localStorage.name) {
 
 const strobe = () => {
 	let flash = true;
+	let color1 = parseInt(document.getElementById("color1").value);
+	let color2 = parseInt(document.getElementById("color2").value);
+
 	let number = document.getElementById("number").value;
 	setInterval(() => {
 		flash = !flash;
-		document.body.style.backgroundColor = flash ? "blue" : "purple";
+		document.body.style.backgroundColor = flash ? "blue" : "red";
 	}, parseInt(number) * 100);
 };
 
