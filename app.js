@@ -11,9 +11,7 @@ const strobe = () => {
 	interval = setInterval(() => {
 		flash = !flash;
 
-		document.body.style.backgroundImage = flash
-			? "linear-gradient(180deg, green, orange, blue,yellow, red,purple,black)"
-			: "linear-gradient(90deg,blue, red, green,brown,gold,white, yellow,black,purple)";
+		document.body.style.backgroundColor = flash ? "blue" : "red";
 	}, parseInt(number) * 144);
 };
 
