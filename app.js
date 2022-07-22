@@ -11,7 +11,7 @@ const strobe = () => {
 	interval = setInterval(() => {
 		flash = !flash;
 
-		document.body.style.backgroundColor = flash ? "blue" : "red";
+		document.body.style.backgroundColor = flash ? "black" : "white";
 	}, parseInt(number) * 144);
 };
 
