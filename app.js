@@ -12,7 +12,7 @@ const strobe = () => {
 		flash = !flash;
 
 		document.body.style.backgroundColor = flash ? "black" : "white";
-	}, parseInt(number) * 144);
+	}, parseInt(number) * 50);
 };
 
 const stopStrobe = () => {
