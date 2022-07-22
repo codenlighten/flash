@@ -3,15 +3,22 @@ if (localStorage.name) {
 	document.getElementById("hello").innerHTML = `Hello ${name}!`;
 	document.getElementById("login").style.display = "none";
 }
-
+var interval;
 const strobe = () => {
 	let flash = true;
 
 	let number = document.getElementById("number").value;
-	setInterval(() => {
+	interval = setInterval(() => {
 		flash = !flash;
-		document.body.style.backgroundColor = flash ? "blue" : "red";
-	}, parseInt(number) * 50);
+
+		document.body.style.backgroundImage = flash
+			? "linear-gradient(180deg, green, orange, blue,yellow, red,purple,black)"
+			: "linear-gradient(90deg,blue, red, green,brown,gold,white, yellow,black,purple)";
+	}, parseInt(number) * 144);
+};
+
+const stopStrobe = () => {
+	clearInterval(interval);
 };
 
 const submit = () => {
